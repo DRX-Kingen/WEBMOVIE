@@ -1,0 +1,143 @@
+
+.auth-page {
+  min-height: calc(100vh - 76px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  background: #0b101b;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 430px;
+  background: #151e2d;
+  border: 1px solid #293449;
+  border-radius: 16px;
+  padding: 36px;
+  color: white;
+  box-shadow: 0 16px 50px rgba(0, 0, 0, 0.25);
+}
+
+.auth-card h1 {
+  text-align: center;
+  margin: 0 0 12px;
+  font-size: 30px;
+}
+
+.auth-card > p {
+  text-align: center;
+  color: #aab4c4;
+}
+
+.auth-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.auth-card label {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.auth-card input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 13px 14px;
+  border: 1px solid #344155;
+  border-radius: 8px;
+  background: #202b3b;
+  color: white;
+  font-size: 15px;
+}
+
+.auth-card input:focus {
+  outline: none;
+  border-color: #ff365f;
+}
+
+.auth-card form > button {
+  margin-top: 12px;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  background: #e91e50;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.auth-card form > button:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.auth-error {
+  color: #ff6b81 !important;
+  font-size: 14px;
+}
+
+.auth-footer {
+  margin-top: 24px;
+}
+
+.auth-footer a {
+  color: #ff365f;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.header-account {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  min-width: 0;
+}
+
+.header-user {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: white;
+  min-width: 0;
+}
+
+.header-user span {
+  max-width: 160px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.logout-btn {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 10px 14px;
+  border: none;
+  border-radius: 8px;
+  background: #e91e50;
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .auth-card {
+    padding: 24px;
+  }
+
+  .header-account {
+    gap: 8px;
+  }
+
+  .header-user span {
+    display: none;
+  }
+
+  .logout-btn {
+    padding: 9px;
+    font-size: 12px;
+  }
+}
